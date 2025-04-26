@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt';
 import User from '../model/user.model';
 import { client } from '..';
 
+
 export const register: RequestHandler = async (req: Request,res: Response): Promise<any> => {
 
     const {name,email,password} = req.body;
